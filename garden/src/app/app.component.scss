@@ -1,18 +1,176 @@
-.navegacion{
-    .navbar{
-        .container{
-            .Title{
-            color: aliceblue;
-            font-size: 35px;
+.navbar{
+    background: rgb(255,255,255);
+    background: linear-gradient(113deg, rgba(255,255,255,1) 38%, rgb(105, 179, 30) 39%);
+    .navbar-brand{
+        font-size: 25px;
+        margin-right: auto;
+        &:hover{
+            color: rgb(12,182,37);
+            transition: all .5s;
+        }
+    }
+    .navbar-nav{
+       margin-left: auto;
+        .nav-item{
+            .nav-link{
+                font-size: 20px;
+                display: flex;
+                &:hover{
+                    color: white;
+                    transition: all .5s;
+                }
             }
-            
+        }
+    }
+    .bf{
+        .fab{
+            color: rgb(66, 66, 90);
+            font-size: 18px;
+            &:hover{
+                color: blue;
+                transition: all 0s;
+            }
+        }
+    }
+    .bi{
+        .fab{
+            color: rgb(66, 66, 90);
+            font-size: 20px;
+            &:hover{
+                color: rgb(245,96,64);
+                transition: all 0s;
+            }
+        }
+    }
+    .bw{
+        .fab{
+            color: rgb(66, 66, 90);
+            font-size: 20px;
+            &:hover{
+                color: rgb(33, 226, 16);
+                transition: all 0s;
+            }
+        }
+    }
+    .bc{
+        .fas{
+            color: rgb(66, 66, 90);
+            font-size: 20px;
+            &:hover{
+                color: rgba(255,255,255,1);
+                transition: all 0s;
+            }
         }
     }
 }
-.body{
-    .Welcome{
-           color: rgb(41, 209, 41);
-           
+
+.background{
+    background-image: url('../../../garden/src/assets/IMG/fo.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    .carousel{
+        .carousel-inner{
+            .carousel-item img{
+                height: 78vh;
+                width: 50%;
+                margin: auto;
+                padding-top: 100px;
+            }
+
+        }
         
     }
+}
+.row{
+    .column{
+        width: 30%;
+        padding: 15px 30px;
+        margin: auto;
+
+        .card{
+            box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            top: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+            font-style: italic;
+            border-bottom: double cadetblue;
+            margin: 0;
+            
+            
+            .button{
+                border-radius: 6px;
+                background-color: #dd3907;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 15px;
+                padding: 9px;
+                width: 150px;
+                
+                cursor: pointer;
+                margin: auto;
+                &:hover{
+                    background-color: #838b0b;
+                    
+                    transition: all .5s;
+                }
+                  
+            }
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+              }
+              .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+              }
+              .button:hover span {
+                padding-right: 15px;
+              }
+              
+              .button:hover span:after {
+                opacity: 3;
+                right: 0;
+              }
+        }
+        .card img{
+            width: 100%;
+            height: 32vh;
+           
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 300px) {
+
+}
+.prueba{
+    .material-icons{
+        font-size: 300px;
+    }
+    h1.arrow{
+        position: relative;
+        animation-name: arrow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+@keyframes arrow{
+    0%{ transform: translate(0px, 0px); }
+    100%{transform: translate(50px, 0px);}
 }
