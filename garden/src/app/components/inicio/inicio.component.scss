@@ -204,7 +204,7 @@
             text-align: center;
             .conte{
                 font-size:20px;
-                color: gray;
+                color: rgb(99, 97, 97);
                 line-height: 24px;
                 font-family: 'Monserrat', sans-serif;
                 font-weight: 400;
@@ -214,7 +214,70 @@
         
     }
 
+.container{
+    .row{
+        .col{
+            .red{
+                font-family:'Monserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
 
+                &:hover{
+                    color: rgb(81, 190, 59);
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: black;
+    .container{
+        .row{
+            .containersecond{
+                .social_footer_ul{
+                    display: table;
+                    margin: 15px auto 0px auto;
+                    list-style-type: none;
+                    margin: auto;
+
+                    .lisocial{
+                        padding-left: 40px;
+                        padding-top: 10px;
+                        float: left;
+                        
+
+                        .sectionsocial{
+                            color: rgb(255, 255, 255);
+                            border:2px solid rgb(95, 94, 94);
+                            padding: 8px;
+                            border-radius: 60%;
+                            display: block;
+                            text-align: center;
+
+                            &:hover{
+                                color: rgb(40, 92, 170);
+                            }
+
+                            .fab{
+                                width: 20px;
+                                height: 20px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo-part{
+                border-left: 1px solid grey;
+                padding-left: 30px;
+                margin: auto;
+                height: 100%;
+                display: block  ;
+            }
+        }
+    }
+}
 
 
 
@@ -261,11 +324,12 @@
 }
 
 .alert{
-    font-size: 30px;
+    font-size: 33px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 0px black;
     text-align: center;
     display: flex;
+    padding-top: 0;
     
     .material-icons{
            width: 100px;
@@ -275,10 +339,10 @@
            animation-name: arrowsecond;
            position: relative;
            font-size: 60px;
-           padding-top: 23px;
+           padding-top: 0.4em;
            display: inline-block;
            animation-iteration-count: infinite;
-           padding-left: 130px;
+           padding-left: 70px;
     }
     .btnContact{
         font-size: 30px;
@@ -298,8 +362,8 @@
 
 }
 @keyframes arrowsecond{
-    100%   {color:red; left:50px;}
-    0% {color:rgb(52, 188, 31); left:0px; }
+    100%   {color:rgb(0, 0, 0); left:50px;}
+    0% {color:rgb(255, 255, 255); left:0px; }
 }
 
 //animaciones
